@@ -1,0 +1,16 @@
+/* global styling for sticky footer*/
+html, body, app-root {
+    height: 100%;
+  }
+  body {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .content-outer-wrapper {
+    min-height: 100%;
+  }
+
+  .content-inner-wrapper {
+    padding-bottom: 36px;
+  }
