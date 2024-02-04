@@ -1,7 +1,16 @@
-<div class="content-outer-wrapper">
+<mat-card>
+    <mat-card-header>
+        <app-navbar style="flex: content;"></app-navbar>
+    </mat-card-header>
+    <mat-card-content>
+        <router-outlet />
+    </mat-card-content>
+    <mat-card-footer>
+        <app-footer></app-footer>
+    </mat-card-footer>
+</mat-card>
+<!-- <div class="content-outer-wrapper">
     <div class="content-inner-wrapper">
         <app-navbar></app-navbar>
-        <router-outlet />
     </div>
-</div>
-<app-footer></app-footer>
+</div> -->
