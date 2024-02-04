@@ -1,0 +1,19 @@
+name: Build and check style
+on:
+  pull_request:
+
+jobs:
+  style-check:
+    name: Style Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+        run: npm install && npm install -g @angular/cli
+      - name: Check style and eslint
+        run: npm run lint && npm run prettier:check
+      - name: Build github project
+        run: npm run build:github

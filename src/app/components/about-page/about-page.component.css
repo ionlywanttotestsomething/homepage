@@ -1,0 +1,17 @@
+.content-wrapper {
+  min-height: 60vh;
+}
+
+/* For large (lg) screens */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .content-wrapper {
+    min-height: 70vh;
+  }
+}
+
+/* For extra large (xl) screens */
+@media (min-width: 1200px) {
+  .content-wrapper {
+    min-height: 75vh;
+  }
+}

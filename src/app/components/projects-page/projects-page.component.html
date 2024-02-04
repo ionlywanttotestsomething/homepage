@@ -1,0 +1,15 @@
+<div *ngIf="repos.length != 0">
+  <div mdbScrollspyElement="scrollspy-2" id="sectionProjectsId" *ngFor="let repo of repos">
+    <h5>{{ repo.name }}</h5>
+    <h6 class="page-link">
+      Link: <a href="{{ repo.htmlUrl }}">{{ repo.htmlUrl }}</a>
+    </h6>
+    <p>{{ repo.description }}</p>
+    <ul class="p-0 list-unstyled flex-wrap">
+      <app-skill-element *ngFor="let tag of repo.tags" [skillName]="tag"></app-skill-element>
+    </ul>
+  </div>
+</div>
+<div *ngIf="repos.length == 0">
+  <app-page-not-found></app-page-not-found>
+</div>

@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "overrides": [
+    {
+      "files": ["*.js", "*.ts"],
+      "excludedFiles": ["node_modules/**", ".angular/**"]
+    }
+  ],
+  "rules": {
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-explicit-any": ["off"] // cannot change it as api github reponsnce structure is not known
+  }
+}
