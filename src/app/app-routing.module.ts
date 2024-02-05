@@ -7,8 +7,8 @@ import { AddressFormComponent } from './address-form/address-form.component';
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'form', component: AddressFormComponent},
-  { path: '**', pathMatch: 'full',  
-  component: PageNotFoundComponent }, 
+  { path: 'home',   redirectTo: '', pathMatch: 'full' },
+  { path: '**', pathMatch: 'full', component: PageNotFoundComponent }, 
 ];
 
 @NgModule({
