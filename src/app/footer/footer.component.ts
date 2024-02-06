@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  currentDate: string = new Date().toLocaleString()
+  currentDate: string = new Date().toLocaleDateString()
 }

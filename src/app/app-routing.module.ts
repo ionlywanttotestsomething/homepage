@@ -2,11 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
-import { AddressFormComponent } from './address-form/address-form.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { CvPageComponent } from './cv-page/cv-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'form', component: AddressFormComponent},
+  { path: 'projects', component: ProjectsPageComponent},
+  { path: 'cv', component: CvPageComponent},
+  { path: 'about', component: AboutPageComponent},
+  { path: 'contact', component: ContactFormComponent},
   { path: 'home',   redirectTo: '', pathMatch: 'full' },
   { path: '**', pathMatch: 'full', component: PageNotFoundComponent }, 
 ];
