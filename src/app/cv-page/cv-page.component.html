@@ -1,3 +1,15 @@
-<app-experience-page></app-experience-page>
-<app-skills-page></app-skills-page>
-<app-projects-page></app-projects-page>
+<div class="scrollspy-example disable-scrollbars scrollspy-container">
+  <section mdbScrollspyElement="scrollspy" id="sectionAboutPage">
+    <app-about-page></app-about-page>
+  </section>
+  <hr class="hr hr-blurry"/>
+  <span class="h3 text-muted">Experience</span>
+  <section mdbScrollspyElement="scrollspy" id="sectionExperiencePage">
+    <app-experience-page></app-experience-page>
+  </section>
+  <hr class="hr hr-blurry"/>
+  <span class="h3 text-muted">Projects</span>
+  <section mdbScrollspyElement="scrollspy" id="sectionProjectsPage">
+    <app-projects-page></app-projects-page>
+  </section>
+</div>

@@ -1,44 +1,16 @@
-<form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
-    <mat-card class="shipping-card">
-      <mat-card-header>
-        <mat-card-title>contact me</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <div class="row">
-          <div class="col">
-            <mat-form-field class="full-width">
-              <input matInput placeholder="company" formControlName="company">
-              <mat-error *ngIf="addressForm.controls['company'].hasError('required')">company is <strong>required</strong></mat-error>
-            </mat-form-field>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <mat-form-field class="full-width">
-              <input matInput type="email" placeholder="email ie.: you@yourcompany.com" formControlName="email">
-              <mat-error *ngIf="addressForm.controls['email'].hasError('required')">email is <strong>required</strong></mat-error>
-              <mat-error *ngIf="addressForm.controls['email'].hasError('incorrect')">email is <strong>incorrect</strong></mat-error>
-              </mat-form-field>
-        </div>
-          <div class="col">
-            <mat-form-field class="full-width">
-              <input matInput type="text" placeholder="Message title" formControlName="messageTitle">
-              <mat-error *ngIf="addressForm.controls['messageTitle'].hasError('required')">Messege title is <strong>required</strong></mat-error>
-            </mat-form-field>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <mat-form-field class="full-width">
-              <textarea matInput placeholder="Message" formControlName="message"></textarea>
-              <mat-error *ngIf="addressForm.controls['message'].hasError('required')">Message is <strong>required</strong></mat-error>
-            </mat-form-field>
-          </div>
-        </div>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary" type="submit">Submit</button>
-      </mat-card-actions>
-    </mat-card>
-  </form>
-  
+<div class="btn-group-lg d-flex justify-content-center">
+  <div class="d-flex justify-content-center align-items-center align-items-stretch">
+    <button class="btn btn-link btn-lg" [mdbTooltip]="'Copy email'" (click)="copyText('promucha@gmail.com')"
+            role="link" mdbRipple>
+      <i class="fas fa-at fa-2x"></i>
+    </button>
+    <a class="btn btn-link btn-lg" [mdbTooltip]="'Open Github Profile'" href="https://www.github.com/alerGeek"
+       target="_blank" role="button" mdbRipple>
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+    <a class="btn btn-link btn-lg" [mdbTooltip]="'Open Spotify Profile'" href="https://open.spotify.com/user/promucha?si=80348719399f436e"
+       target="_blank" role="button" mdbRipple>
+      <i class="fab fa-spotify fa-2x"></i>
+    </a>
+  </div>
+</div>

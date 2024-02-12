@@ -1,0 +1,42 @@
+{
+  "PROGRAMMING": {
+    "name": "PROGRAMMING",
+    "displayName": "Programming",
+    "badgeColor": "badge-primary"
+  },
+  "ORM": {
+    "name": "ORM",
+    "displayName": "ORM",
+    "badgeColor": "badge-info"
+  },
+  "BUILD_TOOLS": {
+    "name": "BUILD_TOOLS",
+    "displayName": "Build Tools",
+    "badgeColor": "badge-secondary"
+  },
+  "DEVOPS": {
+    "name": "DEVOPS",
+    "displayName": "DevOps",
+    "badgeColor": "badge-success"
+  },
+  "DEV_TOOLS": {
+    "name": "DEV_TOOLS",
+    "displayName": "Dev Tools",
+    "badgeColor": "badge-light"
+  },
+  "COLLABORATION_TOOLS": {
+    "name": "COLLABORATION_TOOLS",
+    "displayName": "Collaboration Tools",
+    "badgeColor": "badge-dark"
+  },
+  "FRONTEND": {
+    "name": "FRONTEND",
+    "displayName": "Frontend",
+    "badgeColor": "badge-warning"
+  },
+  "UNKNOWN": {
+    "name" : "",
+    "displayName": "unknown",
+    "badgeColor": "badge-dark"
+  }
+}
